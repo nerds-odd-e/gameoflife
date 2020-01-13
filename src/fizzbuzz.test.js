@@ -15,4 +15,7 @@ describe('FizzBuzz', () => {
     expect(fizzbuzz.say(5)).toBe('Buzz')
     expect(fizzbuzz.say(10)).toBe('Buzz')
   })
+  it('says FizzBuzz from 15x', () => {
+    expect(fizzbuzz.say(15)).toBe('FizzBuzz')
+  })
 })
