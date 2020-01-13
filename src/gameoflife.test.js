@@ -1,6 +1,6 @@
 const { game_of_life } = require("./fizzbuzz");
 
-describe("count neighbours", () => {
+describe("fizzbuzz", () => {
   it("empty", () => {
   });
 
