@@ -10,3 +10,4 @@ const fizzbuzz = function (input) {
 }
 
 module.exports = {fizzbuzz};
+
