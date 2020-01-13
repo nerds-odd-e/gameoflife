@@ -6,4 +6,9 @@ describe("fizzbuzz", () => {
 
   });
 
+  it("get 2 when input 2", () => {
+    expect('2').toEqual(fizzbuzz(2));
+
+  });
+
 });
