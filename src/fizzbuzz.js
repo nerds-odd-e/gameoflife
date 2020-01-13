@@ -4,4 +4,4 @@ const fizzbuzz = function (input) {
     return '1';
 }
 
-module.exports = fizzbuzz;
+module.exports = {fizzbuzz};
