@@ -1,7 +1,7 @@
 
 
 const fizzbuzz = function (input) {
-    return '1';
+    return input.toString();
 }
 
 module.exports = {fizzbuzz};
