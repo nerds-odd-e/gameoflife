@@ -11,3 +11,4 @@
 ## Developer list
 
 - Terry Yin
+- Philip Wang
