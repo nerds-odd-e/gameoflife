@@ -10,4 +10,8 @@ describe('FizzBuzz', () => {
     expect(fizzbuzz.say(3)).toBe('Fizz')
     expect(fizzbuzz.say(6)).toBe('Fizz')
   })
+
+  it('says Buzz for 5x', () => {
+    expect(fizzbuzz.say(5)).toBe('Buzz')
+  })
 })
