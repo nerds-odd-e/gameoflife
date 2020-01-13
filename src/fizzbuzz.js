@@ -1,6 +1,6 @@
 
 module.exports = {  };
 
-function fizzbuzz(input) {
+const fizzbuzz = function (input) {
     return '1';
 }
