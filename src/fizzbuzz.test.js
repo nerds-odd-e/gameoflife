@@ -16,6 +16,10 @@ describe("fizzbuzz", () => {
   it("get fizz when input 6", () => {
     shouldBeFizz(6);
   }); 
+
+  it("get buzz when input 5", () => { 
+    expect('buzz').toEqual(fizzbuzz(5)); 
+  }); 
 });
 
 function shouldBeFizz(input) {
