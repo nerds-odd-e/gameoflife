@@ -1,5 +1,8 @@
 module.exports = {
-  say() {
-    return '1'
+  say(number) {
+    if (number === 1) {
+      return '1'
+    }
+    return '2'
   }
 }
