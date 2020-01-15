@@ -6,7 +6,7 @@ const getHands = function (c1) {
     return c1.split(',').sort();
 };
 
-singleCardWins  = function (player1_hands, player2_hands, index = 3) {
+const singleCardWins = (player1_hands, player2_hands, index = 3) => {
     if (player1_hands[index] > player2_hands[index]) {
         return "Black wins"
     }
