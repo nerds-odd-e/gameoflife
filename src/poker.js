@@ -10,6 +10,9 @@ const singleCardWins = (player1_hands, player2_hands, index = 3) => {
     if (index === 0) {
         return "Tie"
     }
+    if (player1_hands[index] === player2_hands[index]) {
+
+    }
     if (player1_hands[index] > player2_hands[index]) {
         return "Black wins"
     }
