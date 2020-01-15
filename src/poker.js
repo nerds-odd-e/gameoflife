@@ -31,7 +31,7 @@ const checkHands = function(black, white) {
 let black_hands = []
 module.exports = {
     check: function(black, white) {
-        const black_hands = sortHand(black)
+        black_hands = sortHand(black)
         const white_hands = sortHand(white)
         checkHands(black_hands, white_hands);
         if (black === white)
