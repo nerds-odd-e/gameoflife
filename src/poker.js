@@ -14,7 +14,7 @@ module.exports = {
         return "White wins"
     }, check(c1, c2) {
         const player1_hands = getHands(c1)
-        const player2_hands = c2.split(',').sort()
+        const player2_hands = getHands(c2)
         if (c1 === c2)
             return 'Tie';
         if (player1_hands[4] === player2_hands[4]) {
