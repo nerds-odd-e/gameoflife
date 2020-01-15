@@ -46,7 +46,10 @@ describe('Pocker hand', () => {
     })
   })
 
-  it('one player has a pair and the other does not', () => {
-   expect(poker.check('2S,2H,3C,5D,7D', '3S,5H,7C,9D,QD')).toBe('Black wins')
-  })
+    describe('pair', () => {
+
+      it('one player has a pair and the other does not', () => {
+        expect(poker.check('2S,2H,3C,5D,7D', '3S,5H,7C,9D,QD')).toBe('Black wins')
+      })
+    })
 })
