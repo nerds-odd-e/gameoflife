@@ -29,7 +29,7 @@ describe('Pocker hand', () => {
 
   describe('flush', ()=>{
     it('flush wins normal',()=>{
-
+      //expect(poker.check('2C,3C,6C,AC,9C','2C,8C,6D,AC,9C')).toBe('Black wins')
     })
   })
   describe('creat a card', ()=>{
