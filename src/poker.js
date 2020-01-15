@@ -26,7 +26,5 @@ check: function(black, white) {
         }
         return this.singleCardWins(black_hands, player2_hands, 4)
     },
-    card: function(symbol) {
-        return {suit: symbol[1], value: symbol[0]}
-    }
+    card
 }
