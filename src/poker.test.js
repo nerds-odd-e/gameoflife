@@ -7,7 +7,7 @@ describe('Pocker hand', () => {
         })
 
         it('High card with Ace black win', () => {
-            // expect(poker.check('3S,2S,4S,5S,AD', '3S,2S,4S,5S,7D')).toBe('Black wins')
+            expect(poker.check('3S,2S,4S,5S,AD', '3S,2S,4S,5S,7D')).toBe('Black wins')
         })
 
         it('High card black win', () => {
