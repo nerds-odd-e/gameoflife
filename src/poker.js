@@ -1,5 +1,11 @@
 const card = (symbol) => {
-    return {suit: symbol[1], value: symbol[0]}
+    let val =0
+    if (symbol[0] === 'A') {
+        val = 14
+    } else {
+        val = parseInt(symbol[0])
+    }
+    return {suit: symbol[1], value: val}
 }
 
 const sortHand = function (hand) {

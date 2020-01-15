@@ -46,7 +46,7 @@ describe('Pocker hand', () => {
         it('should create a card', () => {
             let card = poker.card('2S')
             expect(card.suit).toBe('S')
-            expect(card.value).toBe('2')
+            expect(card.value).toBe(2)
         })
     })
 
