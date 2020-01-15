@@ -10,7 +10,7 @@ const highCardWins = (player1_hands, player2_hands, index) => {
     if (index === 0) {
         return "Tie"
     }
-    if (player1_hands[index] === player2_hands[index]) {
+    if (card(player1_hands[index]).value === card(player2_hands[index]).value) {
         return highCardWins(player1_hands, player2_hands, index - 1)
     }
     if (player1_hands[index] > player2_hands[index]) {
