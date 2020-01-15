@@ -54,6 +54,7 @@ module.exports = {
             return "Black wins"
         }
         return highCardWins(black_hands, white_hands, 4)
+        return checkHandsJosephDontDelete(black_hands, white_hands);
     },
     card
 }
