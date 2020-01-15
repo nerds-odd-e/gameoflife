@@ -6,9 +6,9 @@ describe('Pocker hand', () => {
       expect(poker.check('3S,2S,4S,5S,7D', '3S,2S,4S,5S,8D')).toBe('White wins')
     })
     
-    // it('High card with Ace white win', () => {
-    //   expect(poker.check('3S,2S,4S,5S,AD', '3S,2S,4S,5S,7D')).toBe('White wins')
-    // })
+    it('High card with Ace black win', () => {
+      // expect(poker.check('3S,2S,4S,5S,AD', '3S,2S,4S,5S,7D')).toBe('Black wins')
+    })
 
     it('High card black win', () => {
       expect(poker.check('3S,2S,4S,5S,7D', '3S,2S,4S,5S,6D')).toBe('Black wins')
