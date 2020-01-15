@@ -39,7 +39,7 @@ module.exports = {
         if (black === white)
             return 'Tie';
         if(white_hands[0][0] === white_hands[1][0]){
-            return "Black wins"
+            return "White wins"
         }
         if(black_hands[0][0] === black_hands[1][0]){
             return "Black wins"
