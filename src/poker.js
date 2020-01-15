@@ -28,6 +28,7 @@ const isFlush = function(player_hand) {
 const checkHands = function(black, white) {
 }
 
+let black_hands = []
 module.exports = {
     check: function(black, white) {
         const black_hands = sortHand(black)
