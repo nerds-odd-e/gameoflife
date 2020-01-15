@@ -11,7 +11,7 @@ const singleCardWins = (player1_hands, player2_hands, index = 3) => {
         return "Tie"
     }
     if (player1_hands[index] === player2_hands[index]) {
-
+        return singleCardWins(player1_hands, player2_hands, index - 1)
     }
     if (player1_hands[index] > player2_hands[index]) {
         return "Black wins"
@@ -43,9 +43,6 @@ module.exports = {
             return 'Tie';
         if(black_hands[0][0] === black_hands[1][0]){
             return "Black wins"
-        }
-        if (black_hands[4] === white_hands[4]) {
-            return singleCardWins(black_hands, white_hands, 3);
         }
         return singleCardWins(black_hands, white_hands, 4)
     },
