@@ -6,14 +6,14 @@ const sortHand = function (hand) {
     return hand.split(',').sort();
 };
 
-const highCardWins = (player1_hands, player2_hands, index) => {
+const highCardWins = (black_hands, player2_hands, index) => {
     if (index === 0) {
         return "Tie"
     }
-    if (card(player1_hands[index]).value === card(player2_hands[index]).value) {
-        return highCardWins(player1_hands, player2_hands, index - 1)
+    if (card(black_hands[index]).value === card(player2_hands[index]).value) {
+        return highCardWins(black_hands, player2_hands, index - 1)
     }
-    if (card(player1_hands[index]).value > card(player2_hands[index]).value) {
+    if (card(black_hands[index]).value > card(player2_hands[index]).value) {
         return "Black wins"
     }
     return "White wins"
