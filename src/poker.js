@@ -6,20 +6,21 @@ const getHands = function (c1) {
     return c1.split(',').sort();
 };
 
+singleCardWins  = function (player1_hands, player2_hands, index = 3) {
+    if (player1_hands[index] > player2_hands[index]) {
+        return "Black wins"
+    }
+    return "White wins"
+}
+
 module.exports = {
-    singleCardWins: function (player1_hands, player2_hands, index = 3) {
-        if (player1_hands[index] > player2_hands[index]) {
-            return "Black wins"
-        }
-        return "White wins"
-},
-check: function(black, white) {
-        black_hands = getHands(black)
-        white_hands = getHands(white)
+    check: function(black, white) {
+        const black_hands = getHands(black)
+        const white_hands = getHands(white)
         if (black === white)
             return 'Tie';
         if (black_hands[4] === white_hands[4]) {
-            return this.singleCardWins(black_hands, white_hands, 3);
+            return singleCardWins(black_hands, white_hands, 3);
         }
         if(black_hands[0][0] === black_hands[1][0]){
             return "Black wins"
