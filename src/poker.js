@@ -23,8 +23,6 @@ const isFlush = function(player_hand) {
         }
       }
     return true;
-
-
 }
 
 module.exports = {
