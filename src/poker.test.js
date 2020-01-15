@@ -27,6 +27,12 @@ describe('Pocker hand', () => {
     expect(poker.check('2S,2H,2C,2D,3D', '2S,2H,2C,2D,3D')).toBe('Tie')
   })
 
+  describe('flush', ()=>{
+    it('flush wins normal',()=>{
+
+    })
+  })
+
   it('one player has a pair and the other does not', () => {
 //    expect(poker.check('2S,2H,3C,5D,7D', '3S,5H,7C,9D,QD')).toBe('Black wins')
   })
