@@ -5,7 +5,7 @@ describe('Pocker hand', () => {
     it('High card white win', () => {
       expect(poker.check('3S,2S,4S,5S,7D', '3S,2S,4S,5S,8D')).toBe('White wins')
     })
-    
+
     it('High card with Ace black win', () => {
       // expect(poker.check('3S,2S,4S,5S,AD', '3S,2S,4S,5S,7D')).toBe('Black wins')
     })
@@ -37,12 +37,12 @@ describe('Pocker hand', () => {
       //expect(poker.check('2C,3C,6C,AC,9C','2C,8C,6D,AC,9C')).toBe('Black wins')
     })
   })
+
   describe('creat a card', ()=>{
     it('should create a card',()=>{
       let card = poker.card('2S')
-      expect(card.suit).toBe('S')      
-      expect(card.value).toBe('2')      
-
+      expect(card.suit).toBe('S')
+      expect(card.value).toBe('2')
     })
   })
 
