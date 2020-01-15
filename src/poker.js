@@ -48,7 +48,6 @@ module.exports = {
             return singleCardWins(black_hands, white_hands, 3);
         }
         return singleCardWins(black_hands, white_hands, 4)
-        return checkHands(black_hands, white_hands);
     },
     card
 }
