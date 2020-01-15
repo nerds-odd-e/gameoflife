@@ -15,7 +15,7 @@ module.exports = {
 },
 check: function(black, white) {
         black_hands = getHands(black)
-        const white_hands = getHands(white)
+        white_hands = getHands(white)
         if (black === white)
             return 'Tie';
         if (black_hands[4] === white_hands[4]) {
