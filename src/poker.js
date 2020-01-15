@@ -20,9 +20,5 @@ module.exports = {
             return "Black wins"
         }
         return this.singleCardWins(player1_hands, player2_hands, 4)
-        if(player1_hands[4] > player2_hands[4]){
-            return "Black wins"
-        }
-        return "White wins"
     },
 }
