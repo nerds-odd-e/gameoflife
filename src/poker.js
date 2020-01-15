@@ -25,7 +25,7 @@ module.exports = {
         if(black_hands[0][0] === black_hands[1][0]){
             return "Black wins"
         }
-        return this.singleCardWins(black_hands, white_hands, 4)
+        return singleCardWins(black_hands, white_hands, 4)
     },
     card
 }
