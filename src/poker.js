@@ -7,6 +7,9 @@ module.exports = {
         if(player1_hands[4] > player2_hands[4]){
             return "Black wins"
         }
+        if(player1_hands[0] === player1_hands[1]){
+          return "Black wins"
+        }
         return "White wins"
     }
 }
