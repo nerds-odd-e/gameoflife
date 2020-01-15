@@ -12,10 +12,10 @@ module.exports = {
             return "Black wins"
         }
         return "White wins"
-    }, check(black, c2) {
+    }, check(black, white) {
         const player1_hands = getHands(black)
-        const player2_hands = getHands(c2)
-        if (black === c2)
+        const player2_hands = getHands(white)
+        if (black === white)
             return 'Tie';
         if (player1_hands[4] === player2_hands[4]) {
             return this.singleCardWins(player1_hands, player2_hands, 3);
