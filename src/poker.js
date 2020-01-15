@@ -15,16 +15,16 @@ module.exports = {
 },
 check: function(black, white) {
         const black_hands = getHands(black)
-        const player2_hands = getHands(white)
+        const white_hands = getHands(white)
         if (black === white)
             return 'Tie';
-        if (black_hands[4] === player2_hands[4]) {
-            return this.singleCardWins(black_hands, player2_hands, 3);
+        if (black_hands[4] === white_hands[4]) {
+            return this.singleCardWins(black_hands, white_hands, 3);
         }
         if(black_hands[0][0] === black_hands[1][0]){
             return "Black wins"
         }
-        return this.singleCardWins(black_hands, player2_hands, 4)
+        return this.singleCardWins(black_hands, white_hands, 4)
     },
     card
 }
