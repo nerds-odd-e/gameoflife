@@ -50,7 +50,7 @@ module.exports = {
         if(white_hands[0][0] === white_hands[1][0]){
             return "White wins"
         }
-        if(black_hands[0][0] === black_hands[1][0]){
+        if(isPair(black_hands)){
             return "Black wins"
         }
         return highCardWins(black_hands, white_hands, 4)
