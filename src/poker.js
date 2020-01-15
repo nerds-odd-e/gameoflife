@@ -18,7 +18,7 @@ module.exports = {
         }
         return "White wins"
     },
-    card(symbol){
-        return {}
+    card(symbol){s
+        return {suit: symbol[1], value: symbol[0]}
     }
 }
