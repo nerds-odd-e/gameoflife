@@ -14,7 +14,7 @@ module.exports = {
         if (c1 === c2)
             return 'Tie';
         if (player1_hands[4] === player2_hands[4]) {
-            return this.singleCardWins(player1_hands, player2_hands);
+            return this.singleCardWins(player1_hands, player2_hands, 3);
         }
         if(player1_hands[4] > player2_hands[4]){
             return "Black wins"
