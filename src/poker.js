@@ -13,17 +13,17 @@ module.exports = {
         }
         return "White wins"
     }, check(black, white) {
-        const player1_hands = getHands(black)
+        const black_hands = getHands(black)
         const player2_hands = getHands(white)
         if (black === white)
             return 'Tie';
-        if (player1_hands[4] === player2_hands[4]) {
-            return this.singleCardWins(player1_hands, player2_hands, 3);
+        if (black_hands[4] === player2_hands[4]) {
+            return this.singleCardWins(black_hands, player2_hands, 3);
         }
-        if(player1_hands[0][0] === player1_hands[1][0]){
+        if(black_hands[0][0] === black_hands[1][0]){
             return "Black wins"
         }
-        return this.singleCardWins(player1_hands, player2_hands, 4)
+        return this.singleCardWins(black_hands, player2_hands, 4)
     },
     card(symbol){
         return {suit: symbol[1], value: symbol[0]}
