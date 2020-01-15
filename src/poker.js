@@ -17,5 +17,8 @@ module.exports = {
             return "Black wins"
         }
         return "White wins"
+    },
+    card(symbol){
+        return {}
     }
 }
