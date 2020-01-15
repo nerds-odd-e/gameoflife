@@ -4,6 +4,7 @@ module.exports = {
         const player2_hands = c2.split(',')
         if (c1 === c2)
             return 'Tie';
+        // if (player1_hands[4])
         return "White wins"
     }
 }
