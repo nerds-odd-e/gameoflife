@@ -1,3 +1,7 @@
+const card = (symbol) => {s
+    return {suit: symbol[1], value: symbol[0]}
+}
+
 module.exports = {
     extracted: function (player1_hands, player2_hands) {
         if (player1_hands[3] > player2_hands[3]) {
@@ -20,7 +24,4 @@ module.exports = {
         }
         return "White wins"
     },
-    card(symbol){s
-        return {suit: symbol[1], value: symbol[0]}
-    }
 }
