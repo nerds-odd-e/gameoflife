@@ -40,6 +40,9 @@ const isFlush = function(player_hand) {
 const checkHandsJosephDontDelete = function(black_hands, white_hands) {
 }
 
+let isPair = function (black_hands) {
+    return black_hands[0][0] === black_hands[1][0];
+};
 module.exports = {
     check: function(black, white) {
 
@@ -47,10 +50,10 @@ module.exports = {
         const white_hands = sortHand(white)
         if (black === white)
             return 'Tie';
-        if(white_hands[0][0] === white_hands[1][0]){
+        if(isPair(white_hands)){
             return "White wins"
         }
-        if(black_hands[0][0] === black_hands[1][0]){
+        if(isPair(black_hands)){
             return "Black wins"
         }
         return highCardWins(black_hands, white_hands, 4)
