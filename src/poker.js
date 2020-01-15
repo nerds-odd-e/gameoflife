@@ -3,8 +3,8 @@ const card = (symbol) => {
 }
 
 module.exports = {
-    singleCardWins: function (player1_hands, player2_hands) {
-        if (player1_hands[3] > player2_hands[3]) {
+    singleCardWins: function (player1_hands, player2_hands, index = 3) {
+        if (player1_hands[index] > player2_hands[index]) {
             return "Black wins"
         }
         return "White wins"
