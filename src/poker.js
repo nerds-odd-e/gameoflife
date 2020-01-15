@@ -3,7 +3,7 @@ const card = (symbol) => {s
 }
 
 module.exports = {
-    extracted: function (player1_hands, player2_hands) {
+    singleCardWins: function (player1_hands, player2_hands) {
         if (player1_hands[3] > player2_hands[3]) {
             return "Black wins"
         }
@@ -14,7 +14,7 @@ module.exports = {
         if (c1 === c2)
             return 'Tie';
         if (player1_hands[4] === player2_hands[4]) {
-            return this.extracted(player1_hands, player2_hands);
+            return this.singleCardWins(player1_hands, player2_hands);
         }
         if(player1_hands[4] > player2_hands[4]){
             return "Black wins"
