@@ -33,7 +33,7 @@ module.exports = {
     check: function(black, white) {
         black_hands = sortHand(black)
         const white_hands = sortHand(white)
-        checkHands(black_hands, white_hands);
+        // checkHands(black_hands, white_hands);
         if (black === white)
             return 'Tie';
         if(black_hands[0][0] === black_hands[1][0]){
