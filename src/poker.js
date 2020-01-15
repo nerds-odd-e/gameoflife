@@ -6,7 +6,7 @@ const sortHand = function (hand) {
     return hand.split(',').sort();
 };
 
-const highCardWins = (player1_hands, player2_hands, index = 3) => {
+const highCardWins = (player1_hands, player2_hands, index) => {
     if (index === 0) {
         return "Tie"
     }
