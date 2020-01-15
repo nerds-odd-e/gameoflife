@@ -14,5 +14,6 @@ describe('Pocker hand', () => {
   })
 
   it('High card black win by comparing number only', () => {
+    expect(poker.check('3S,2S,4S,5S,7H', '3S,2S,4S,5S,6D')).toBe('Black wins')
   })
 })
