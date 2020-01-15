@@ -10,8 +10,8 @@ describe('Pocker hand', () => {
       expect(poker.check('3S,2S,4S,5S,7D', '3S,2S,4S,5S,6D')).toBe('Black wins')
     })
 
-    it('White second highest win', () => {
-      expect(poker.check('3S,2S,4S,6S,7D', '3S,2S,4S,5S,7D')).toBe('White wins')
+    it('Black second highest win', () => {
+      expect(poker.check('3S,2S,4S,6S,7D', '3S,2S,4S,5S,7D')).toBe('Black wins')
     })
 
     it('High card black win by comparing number only', () => {
