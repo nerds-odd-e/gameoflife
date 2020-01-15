@@ -36,7 +36,6 @@ module.exports = {
     check: function(black, white) {
         const black_hands = sortHand(black)
         const white_hands = sortHand(white)
-        // checkHands(black_hands, white_hands);
         if (black === white)
             return 'Tie';
         if(black_hands[0][0] === black_hands[1][0]){
@@ -46,6 +45,7 @@ module.exports = {
             return singleCardWins(black_hands, white_hands, 3);
         }
         return singleCardWins(black_hands, white_hands, 4)
+        return checkHands(black_hands, white_hands);
     },
     card
 }
