@@ -7,7 +7,7 @@ const sortHand = function (hand) {
 };
 
 const highCardWins = (black_hands, white_hands, index) => {
-    if (index === 0) {
+    if (index === -1) {
         return "Tie"
     }
     if (card(black_hands[index]).value === card(white_hands[index]).value) {
