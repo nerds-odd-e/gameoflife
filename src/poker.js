@@ -33,11 +33,14 @@ const isFlush = function(player_hand) {
 
 module.exports = {
     check: function(black, white) {
-      
+
         const black_hands = sortHand(black)
         const white_hands = sortHand(white)
         if (black === white)
             return 'Tie';
+        if(white_hands[0][0] === white_hands[1][0]){
+            return "Black wins"
+        }
         if(black_hands[0][0] === black_hands[1][0]){
             return "Black wins"
         }

@@ -19,7 +19,7 @@ describe('Pocker hand', () => {
         })
 
         it('Black fifth highest win', () => {
-            expect(poker.check('3S,4S,5S,6S,7D', '4S,2S,5S,6S,7D')).toBe('Black wins')
+            expect(poker.check('3S,4S,5S,6S,7D', '3S,2S,4S,5S,7D')).toBe('Black wins')
         })
 
         it('High card black win by comparing number only', () => {
@@ -56,7 +56,7 @@ describe('Pocker hand', () => {
         })
 
         it('white has a pair and black has a high card', () => {
-            expect(poker.check('3S,5H,7C,9D,8D', '2S,2H,3C,5D,7D')).toBe('Black wins')
+            expect(poker.check('3S,5H,7C,9D,8D', '2S,2H,3C,5D,7D')).toBe('White wins')
         })
 
     })
