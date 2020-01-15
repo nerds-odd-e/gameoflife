@@ -37,9 +37,8 @@ const isFlush = function(player_hand) {
     return true;
 }
 
-const isPair = function (white_hands) {
-    return white_hands[0][0] === white_hands[1][0];
-};
+const checkHandsJosephDontDelete = function(black_hands, white_hands) {
+}
 
 module.exports = {
     check: function(black, white) {
@@ -48,7 +47,7 @@ module.exports = {
         const white_hands = sortHand(white)
         if (black === white)
             return 'Tie';
-        if(isPair(white_hands)){
+        if(white_hands[0][0] === white_hands[1][0]){
             return "White wins"
         }
         if(black_hands[0][0] === black_hands[1][0]){
