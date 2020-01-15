@@ -1,4 +1,4 @@
-let poker =require('./fizzbuzz.js')
+let poker =require('./poker.js')
 
 describe('Pocker hand', () => {
   it('both playes have four of a kind', () => {
