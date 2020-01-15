@@ -21,4 +21,7 @@ module.exports = {
         }
         return this.singleCardWins(player1_hands, player2_hands, 4)
     },
+    card(symbol){
+        return {suit: symbol[1], value: symbol[0]}
+    }
 }
