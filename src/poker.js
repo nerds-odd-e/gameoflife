@@ -13,6 +13,20 @@ const singleCardWins = (player1_hands, player2_hands, index = 3) => {
     return "White wins"
 }
 
+const isFlush = function(player_hand) {
+    let suit = player_hand[0][0]
+
+    for (i = 1; player_hand.length; i++) { 
+    
+        if (player_hand[i][0] !== suit) {
+            return false;
+        }
+      }
+    return true;
+      
+    
+}
+
 module.exports = {
     check: function(black, white) {
         const black_hands = getHands(black)
