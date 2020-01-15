@@ -56,7 +56,7 @@ describe('Pocker hand', () => {
         })
 
         it('white has a pair and black has a high card', () => {
-            expect(poker.check('2S,2H,3C,5D,7D', '3S,5H,7C,9D,8D')).toBe('Black wins')
+            expect(poker.check('3S,5H,7C,9D,8D', '2S,2H,3C,5D,7D')).toBe('Black wins')
         })
 
     })
