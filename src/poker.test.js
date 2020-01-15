@@ -3,8 +3,12 @@ let poker =require('./poker.js')
 describe('Pocker hand', () => {
   describe('High card', () => {
     it('High card white win', () => {
-      expect(poker.check('3S,2S,4S,5S,6D', '3S,2S,4S,5S,7D')).toBe('White wins')
+      expect(poker.check('3S,2S,4S,5S,7D', '3S,2S,4S,5S,8D')).toBe('White wins')
     })
+    
+    // it('High card with Ace white win', () => {
+    //   expect(poker.check('3S,2S,4S,5S,AD', '3S,2S,4S,5S,7D')).toBe('White wins')
+    // })
 
     it('High card black win', () => {
       expect(poker.check('3S,2S,4S,5S,7D', '3S,2S,4S,5S,6D')).toBe('Black wins')
