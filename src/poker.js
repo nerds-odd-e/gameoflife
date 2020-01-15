@@ -1,4 +1,4 @@
-const card = (symbol) => {s
+const card = (symbol) => {
     return {suit: symbol[1], value: symbol[0]}
 }
 
