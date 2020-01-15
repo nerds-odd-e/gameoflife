@@ -29,20 +29,6 @@ const isFlush = function(player_hand) {
 }
 
 const checkHands = function(black, white) {
-    if (black === white)
-        return 'Tie';
-    if(black_hands[0][0] === black_hands[1][0]){
-        return "Black wins"
-    }
-    for (i = 4; i >= 0; i--)        {
-        if (black_hands[i] === white_hands[i]) {
-
-        }
-    }
-    if (black_hands[4] === white_hands[4]) {
-        return singleCardWins(black_hands, white_hands, 3);
-    }
-    return singleCardWins(black_hands, white_hands, 4)
 }
 
 let black_hands = []
