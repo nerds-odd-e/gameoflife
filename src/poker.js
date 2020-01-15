@@ -2,7 +2,7 @@ const card = (symbol) => {
     return {suit: symbol[1], value: symbol[0]}
 }
 
-const getHands = function (hand) {
+const sortHand = function (hand) {
     return hand.split(',').sort();
 };
 
@@ -27,8 +27,8 @@ const isFlush = function(player_hand) {
 
 module.exports = {
     check: function(black, white) {
-        const black_hands = getHands(black)
-        const white_hands = getHands(white)
+        const black_hands = sortHand(black)
+        const white_hands = sortHand(white)
         if (black === white)
             return 'Tie';
         if(black_hands[0][0] === black_hands[1][0]){
