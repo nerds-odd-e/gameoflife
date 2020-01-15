@@ -2,8 +2,8 @@ const card = (symbol) => {
     return {suit: symbol[1], value: symbol[0]}
 }
 
-const getHands = function (c1) {
-    return c1.split(',').sort();
+const getHands = function (hand) {
+    return hand.split(',').sort();
 };
 
 const singleCardWins = (player1_hands, player2_hands, index = 3) => {
